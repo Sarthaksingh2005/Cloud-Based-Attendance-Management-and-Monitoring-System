@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Attendance | Login</title>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0057b7, #00a8e8);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    .container {
+      background: white;
+      color: #333;
+      width: 90%;
+      max-width: 400px;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .container:hover {
+      transform: scale(1.02);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #0057b7;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    button {
+      background: #0057b7;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 90%;
+      font-size: 15px;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #003f8a;
+    }
+
+    #googleLogin {
+      background: #db4437;
+    }
+
+    #googleLogin:hover {
+      background: #b33629;
+    }
+
+    #message {
+      color: red;
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img src="university_logo.png" alt="University Logo" class="logo" />
+    <h2>University Attendance System</h2>
+
+    <div class="login-box">
+      <button id="googleLogin">Sign in with Google</button>
+      <p>or</p>
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button id="loginBtn">Login</button>
+      <p id="message"></p>
+    </div>
+  </div>
+
+  <script type="module" src="../srv/app.js"></script>
+</body>
+</html>
