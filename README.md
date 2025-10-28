@@ -15,4 +15,4 @@
 5. Run `firebase init` → choose Hosting
 6. Run `firebase deploy`
 7. Get live URL & test the app 🚀
-## App URL: https://attendance-system-8496d.web.app/
+## App URL: https://university-attendance-7d2e3.web.app/
