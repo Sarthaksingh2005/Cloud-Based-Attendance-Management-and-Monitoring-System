@@ -1,5 +1,17 @@
 {
   "projects": {
-    "default": "university-attendance-7d2e3"
-  }
+    "default": "university-attendance-7d2e3",
+    "attendance": "university-attendance-7d2e3"
+  },
+  "targets": {
+    "university-attendance-7d2e3": {
+      "hosting": {
+        "live": [
+          "attendance-site",
+          "university-attendance-7d2e3"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
